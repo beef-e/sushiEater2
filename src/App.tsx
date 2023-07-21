@@ -2,7 +2,6 @@ import { useState } from 'react';
 import ButtonCounter from './components/ButtonCounter';
 import Counter from './components/Counter';
 import Header from './components/Header';
-import React from 'react';
 
 function App() {
 	const [count, setCount] = useState(0);
