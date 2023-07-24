@@ -23,7 +23,7 @@ function App() {
 					<ButtonCounter
 						colore="primary"
 						onButtonClick={() => {
-							setStart(true);
+							inputText === '' ? setStart(false) : setStart(true);
 						}}>
 						Submit
 					</ButtonCounter>

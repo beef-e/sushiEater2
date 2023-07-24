@@ -13,19 +13,14 @@ interface ModalInputProps {
 
 const ModalInput = ({ children, InputText, handleChange }: ModalInputProps) => {
 	const [showVariable, setShowVariable] = useState(true);
-	//const [inputText, setInputText] = useState('');
 
 	const closeModal = () => {
 		setShowVariable(false);
 	};
 
-	/*const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-		// 👇 Store the input value to local state
-		setInputText(e.target.value);
-	};*/
-
 	return (
 		<Modal
+			backdrop="static"
 			show={showVariable}
 			onHide={closeModal}>
 			<ModalHeader>
